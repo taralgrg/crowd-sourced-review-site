@@ -1,0 +1,21 @@
+{ "listings": [{
+
+  "tour": "Hong Kong Disneyland",
+  "location": "Lantau Island",
+  "duration": "1-2 Days",
+  "price": "HKD 750-1300",
+  "image": "https://media-cdn.tripadvisor.com/media/photo-s/06/24/0e/71/hong-kong-disneyland.jpg"
+    }, {
+  "tour": "Ocean Park",
+  "location": "Hong Kong Island",
+  "duration": "1 Day",
+  "price": "HKD 540",
+  "image": "https://www.royalplaza.com.hk/wp-content/uploads/Ocean-Park-Hong-Kong.jpg"
+   }, {
+  "tour": "Ngong Ping 360",
+  "location": "Lantau Island",
+  "duration": "1 day",
+  "price": "500",
+  "image": "http://www.gardenhostel.com.hk/images/NgongPing.jpg"
+   }]
+}
