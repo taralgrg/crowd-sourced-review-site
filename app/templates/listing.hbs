@@ -1,7 +1,19 @@
-<br><br><h2>More information about {{model.tour}}</h2><br>
+<br><br><h2>More information about {{model.listing.tour}}</h2><br>
 
-  <h4>{{model.location}}<br>
-    {{model.duration}}<br>{{model.price}} </h4>
-    <p><img class="image1" src={{model.image}}></p>
+  <h4>{{model.listing.location}}<br>
+    {{model.listing.duration}}<br>{{model.listing.price}} </h4>
+    <p><img class="image1" src={{model.listing.image}}></p>
 
-    {{listing-detail listing=model}}
+
+    <div class="col-md-3" >
+      <h4> All Reviews </h4>
+        <ul>
+          {{#each model.listing.reviews as |review|}}
+           <li> Author: {{review.author}} </li>
+            <li> Content: {{review.content}} </li>
+            <li> Rating: {{review.rating}} </li>
+          {{/each}}
+       </ul><br><br>
+       {{new-review saveReview="saveReview" listing=model.listing}}
+
+    </div>

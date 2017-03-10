@@ -17,5 +17,14 @@
   "duration": "1 day",
   "price": "500",
   "image": "http://www.gardenhostel.com.hk/images/NgongPing.jpg"
-   }]
+   }],
+   "reviews": [{
+  "author": "Andrea",
+  "rating": 4,
+  "content": "Very tiring."
+}, {
+  "author": "Alex",
+  "rating": 9,
+  "content": "Nice view , recommended for kids!"
+}]
 }
