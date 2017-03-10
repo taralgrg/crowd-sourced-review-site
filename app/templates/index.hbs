@@ -1,10 +1,19 @@
-<h3>Best Online Travel Agent from 2013 to 2016
-Voted by TTG Travel Awards</h3>
+<br><br><h3>Best Online Travel Agent from 2013 to 2016
+Voted by TTG Travel Awards</h3> <br><br>
 
    <ul>
-     {{#each model as |listing|}}
-      <div class="col-md-3">
-       <li>{{listing-tile listing=listing}}</li>
+     {{#each model.listings as |listing|}}
+      <div class="col-md-3 display-boxes">
+        {{#link-to 'listing' listing.id}}
+         <li>{{listing-tile listing=listing}}</li>
+        {{/link-to}}
       </div>
     {{/each}}
   </ul>
+
+  <h4 class="col-md-2"> All Reviews </h4>
+    <ul>
+      {{#each model.reviews as |review|}}
+        <li>{{review.rating}} - {{review.content}} - by {{review.author}}</li>
+      {{/each}}
+   </ul>

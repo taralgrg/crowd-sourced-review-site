@@ -2,3 +2,16 @@
   height: 176px;
   width: 255px;
 }
+
+.display-boxes {
+  border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 10px solid #000000;
+ padding: 25px;
+}
+
+.image1 {
+  height: 276px;
+  width: 355px;
+}
