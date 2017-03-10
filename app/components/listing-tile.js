@@ -1,4 +1,12 @@
 import Ember from 'ember';
 
-export default Ember.Component.extend({
-});
+export default Ember.Component.extend ({
+favouriteRestaurant: Ember.inject.service(),
+
+  actions: {
+    addToFav() {
+      debugger;
+      this.get('favouriteRestaurant').add(this.get('listing'));
+    }
+  }
+})

@@ -1,4 +1,7 @@
-<li>
+<li>  {{#link-to 'listing' listing.id}}
   {{listing.tour}} <br> {{listing.price}}
     <p><img class="image" src={{listing.image}}></p>
+    {{/link-to}}
+
 </li>
+<button {{action 'addToFav'}}>Add to favourites</button>

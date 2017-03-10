@@ -4,10 +4,9 @@ Voted by TTG Travel Awards</h3> <br><br>
    <ul>
      {{#each model.listings as |listing|}}
       <div class="col-md-3 display-boxes">
-        {{#link-to 'listing' listing.id}}
          <li>{{listing-tile listing=listing}}</li>
-        {{/link-to}}
         {{new-review saveReview="saveReview"}}
       </div>
     {{/each}}
   </ul>
+  {{display-fav}}
