@@ -1,4 +1,10 @@
-<h3> Favourite Restaurants </h3>
-{{#each favouriteRestaurant.items as |item|}}
-  {{item.tour}} -- {{item.price}}
-{{/each}}
+ <div class="row"> <h3> Favourite Restaurants </h3> </div>
+   <ul class="list-group">
+     <li>
+       {{#each favouriteRestaurant.items as |item|}}
+         <div class="list-group-item row">
+           {{item.tour}} -- {{item.price}}
+        </div>
+        {{/each}}
+   </li>
+  </ul>

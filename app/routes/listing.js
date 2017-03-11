@@ -14,8 +14,12 @@ export default Ember.Route.extend({
            newReview.save().then(function() {
              return listing.save();
            });
-           this.transitionTo('listing', listing);
+           this.transitionTo('listing');
          },
+         destroyReview(review) {
+      review.destroyRecord();
+      this.transitionTo('listing', listing);
+    }
   }
 
 });

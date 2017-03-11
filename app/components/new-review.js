@@ -15,6 +15,11 @@ export default Ember.Component.extend({
      };
      this.set('addNewReview', false);
      this.sendAction('saveReview', params);
-   }
+   },
+   delete(review) {
+      if (confirm('Are you sure you want to delete this review?')) {
+        this.sendAction('destroyReview', review);
+      }
+    }
   }
 });
