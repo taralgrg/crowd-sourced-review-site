@@ -5,7 +5,8 @@ Voted by TTG Travel Awards</h3> <br><br>
      {{#each model.listings as |listing|}}
       <div class="col-md-3 display-boxes">
          <li>{{listing-tile listing=listing}}</li>
-        {{new-review saveReview="saveReview"}}
+        <!-- {{new-review saveReview="saveReview"}} -->
+         {{listing-popularity listing}}
       </div>
     {{/each}}
   </ul>
