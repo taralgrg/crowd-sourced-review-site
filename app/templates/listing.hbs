@@ -7,11 +7,13 @@
 
     <div class="col-md-3" >
       <h4> All Reviews </h4>
-        <ul>
-          {{#each model.listing.reviews as |review|}}
-            {{review-tile review=review destroyReview="destroyReview"}}
-          {{/each}}
-       </ul><br><br>
+
+
+
+
+
        {{new-review saveReview="saveReview" listing=model.listing }}
-       {{listing-detail listing=model  destroyReview="destroyReview"}}
+       {{listing-detail listing=model.listing destroyReview="destroyReview"}}
+       {{new-listing saveListing2="saveListing3"}}
+
     </div>

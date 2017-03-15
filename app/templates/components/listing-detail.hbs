@@ -1,4 +1,6 @@
-{{listing.tour}} <br> {{listing.location}}<br>
-{{listing.duration}}<br> {{listing.price}}
-<br>
-<p><img src={{listing.image}}></p>
+
+<ul>
+  {{#each sortedReviews as |review|}}
+     {{review-tile review=review destroyReview="destroyReview"}}
+  {{/each}}
+</ul>

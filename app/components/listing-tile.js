@@ -5,8 +5,7 @@ favouriteRestaurant: Ember.inject.service(),
 
   actions: {
     addToFav() {
-      debugger;
-      this.get('favouriteRestaurant').add(this.get('listing'));
+    this.get('favouriteRestaurant').add(this.get('listing'));
     }
   }
 })
